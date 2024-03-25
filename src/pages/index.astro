@@ -31,12 +31,15 @@ import { Image } from 'astro:assets';
 						class='mt-3 opacity-50 cursor-not-allowed'
 					/>
 			</div>
-			<img 
-				src="/mockup.webp" 
-				alt="Tutorium app"
-				width="325px"
-				class="absolute transition-all duration-300 right-20 rotate-6 hover:scale-105 drop-shadow-2xl hover:drop-shadow-3xl"
-			>
+			<div class="flex items-center">
+				<svg id="visual" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="absolute w-[800px] right-[-170px] pt-20 fill-red-200"><g transform="translate(379.3371886097251 446.3591201931365)"><path d="M269.6 -243.5C363.3 -175.8 462.9 -87.9 463 0.1C463.2 88.2 363.8 176.3 270.1 252.6C176.3 329 88.2 393.5 10.9 382.6C-66.3 371.6 -132.6 285.3 -185.3 208.9C-237.9 132.6 -277 66.3 -301.6 -24.6C-326.2 -115.5 -336.3 -231 -283.7 -298.7C-231 -366.3 -115.5 -386.2 -13.8 -372.4C87.9 -358.6 175.8 -311.2 269.6 -243.5"/></g></svg>
+				<img 
+					src="/mockup.webp" 
+					alt="Tutorium app"
+					width="325px"
+					class="absolute transition-all duration-300 rotate-6 hover:scale-105 drop-shadow-2xl hover:drop-shadow-3xl right-20"
+				>
+			</div>
 		</div>
 	</main>
 </Layout>
