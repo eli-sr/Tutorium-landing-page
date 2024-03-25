@@ -5,7 +5,7 @@ import { Image } from 'astro:assets';
 
 <Layout title="Welcome to Astro.">
 	<main class="flex justify-center">
-		<div class="min-w-[70vw] mt-[200px] px-20 flex items-center relative">
+		<div class="min-w-[70vw] mt-[180px] px-20 flex items-center relative">
 			<div class="w-1/2">
 				<h1 class="text-[4rem] font-[600] leading leading-tight mb-6">
 					Empieza a dar 
@@ -28,14 +28,14 @@ import { Image } from 'astro:assets';
 						width={175}
 						loading="eager"
 						inferSize
-						class='mt-3'
+						class='mt-3 opacity-50 cursor-not-allowed'
 					/>
 			</div>
 			<img 
 				src="/mockup.webp" 
 				alt="Tutorium app"
 				width="325px"
-				class="absolute right-20 rotate-6 drop-shadow-3xl"
+				class="absolute transition-all duration-300 right-20 rotate-6 hover:scale-105 drop-shadow-2xl hover:drop-shadow-3xl"
 			>
 		</div>
 	</main>
