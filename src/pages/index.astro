@@ -1,49 +1,85 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro'
+import { Image } from 'astro:assets'
 ---
 
-<Layout title="Tutorium">
-	<main class="flex justify-center">
-		<div class="lg:min-w-[70vw] lg:mt-[180px] lg:px-20 px-5 flex items-center relative mt-[50px]">
-			<div class="flex flex-col items-center lg:w-1/2 lg:items-start">
-				<h1 class="lg:text-[4rem] mb-12 leading leading-tight lg:mb-6 lg:text-left text-center text-4xl font-bold text-gray-800 tracking-tighter">
-					Empieza a dar 
-					<br>
+<Layout title='Tutorium'>
+	<main class='flex flex-col items-center'>
+		<section class='lg:min-w-[70vw] lg:my-[180px] lg:px-20 px-5 flex items-center relative mt-[50px]'>
+			<div class='flex flex-col items-center lg:w-1/2 lg:items-start'>
+				<h1
+					class='lg:text-[4rem] mb-12 leading leading-tight lg:mb-6 lg:text-left text-center text-4xl font-bold text-gray-800 tracking-tighter'
+				>
+					Empieza a dar
+					<br />
 					clases particulares
-					<br>
+					<br />
 					¡Hoy mismo!
 				</h1>
-				<p class="text-lg text-center px-7 lg:px-0 lg:text-left">
-					¡Si quieres, puedes! Ya no hace falta que cuelgues carteles, 
-					regístrate en Tutorium y consigue alumnos fácilmente. 
+				<p class='text-lg text-center px-7 lg:px-0 lg:text-left text-gray-500'>
+					¡Si quieres, puedes! Ya no hace falta que cuelgues carteles, regístrate en Tutorium y consigue
+					alumnos fácilmente.
 				</p>
-				<p class="text-lg text-center px-7 lg:px-0 lg:text-left">
-					Matemáticas, Inglés, Baile, Música y muchas asignaturas más.
-					En Tutorium, si eres bueno en algo, puedes dar clases de ello.
+				<p class='text-lg text-center px-7 lg:px-0 lg:text-left text-gray-500'>
+					Matemáticas, Inglés, Baile, Música y muchas asignaturas más. En Tutorium, si eres bueno en algo,
+					puedes dar clases de ello.
 				</p>
 				<img
-					src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png"
-					alt="Disponible en Google Play"
+					src='https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png'
+					alt='Disponible en Google Play'
 					class='mt-12 opacity-50 cursor-not-allowed mb-32 lg:mt-3 lg:mb-0 lg:block w-[200px]'
 				/>
 			</div>
-			<div class="items-center hidden lg:flex">
-				<svg id="visual" viewBox="0 0 900 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" 
-				class="absolute lg:w-[800px] lg:right-[-170px] pt-20 fill-red-200 w-[500px]">
-				<g transform="translate(379.3371886097251 446.3591201931365)"><path d="M269.6 -243.5C363.3 -175.8 462.9 -87.9 463 0.1C463.2 88.2 363.8 176.3 270.1 252.6C176.3 329 88.2 393.5 10.9 382.6C-66.3 371.6 -132.6 285.3 -185.3 208.9C-237.9 132.6 -277 66.3 -301.6 -24.6C-326.2 -115.5 -336.3 -231 -283.7 -298.7C-231 -366.3 -115.5 -386.2 -13.8 -372.4C87.9 -358.6 175.8 -311.2 269.6 -243.5"/></g></svg>
-				<img 
-					src="/mockup.webp" 
-					alt="Tutorium app"
-					class="absolute transition-all duration-300 rotate-6 hover:scale-105 drop-shadow-2xl hover:drop-shadow-3xl right-20 lg:w-[325px] w-56"
+			<div class='items-center hidden lg:flex'>
+				<svg
+					id='visual'
+					viewBox='0 0 900 900'
+					xmlns='http://www.w3.org/2000/svg'
+					xmlns:xlink='http://www.w3.org/1999/xlink'
+					version='1.1'
+					class='absolute lg:w-[800px] lg:right-[-170px] pt-20 fill-red-200 w-[500px]'
 				>
+					<g transform='translate(379.3371886097251 446.3591201931365)'
+						><path
+							d='M269.6 -243.5C363.3 -175.8 462.9 -87.9 463 0.1C463.2 88.2 363.8 176.3 270.1 252.6C176.3 329 88.2 393.5 10.9 382.6C-66.3 371.6 -132.6 285.3 -185.3 208.9C-237.9 132.6 -277 66.3 -301.6 -24.6C-326.2 -115.5 -336.3 -231 -283.7 -298.7C-231 -366.3 -115.5 -386.2 -13.8 -372.4C87.9 -358.6 175.8 -311.2 269.6 -243.5'
+						></path></g
+					></svg
+				>
+				<img
+					src='/mockup.webp'
+					alt='Tutorium app'
+					class='absolute transition-all duration-300 rotate-6 hover:scale-105 drop-shadow-2xl hover:drop-shadow-3xl right-20 lg:w-[325px] w-56'
+				/>
 			</div>
-		</div>
+		</section>
+		<section id='features' class='lg:mt-[180px] lg:px-20 px-5 max-w-[80vw] lg:py-32'>
+			<h2 class='text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8 text-gray-800'>
+				Características principales
+			</h2>
+			<div class='grid gap-8 md:grid-cols-2 lg:grid-cols-3'>
+				<div class='flex flex-col items-center text-center'>
+					<h3 class='text-xl font-bold mb-2'>Búsqueda fácil</h3>
+					<p class='text-gray-500'>
+						Encuentra rápidamente el tutor que necesitas con nuestra búsqueda avanzada.
+					</p>
+				</div>
+				<div class='flex flex-col items-center text-center'>
+					<h3 class='text-xl font-bold mb-2'>Perfiles detallados</h3>
+					<p class='text-gray-500'>
+						Conoce a tus tutores con perfiles completos y calificaciones de estudiantes.
+					</p>
+				</div>
+				<div class='flex flex-col items-center text-center'>
+					<h3 class='text-xl font-bold mb-2'>Notificaciones</h3>
+					<p class='text-gray-500'>Mantente al día con alertas sobre nuevas clases y mensajes de tutores.</p>
+				</div>
+			</div>
+		</section>
 	</main>
 </Layout>
 <style>
 	main {
-		background-image: url("/circles.svg");
+		background-image: url('/circles.svg');
 		background-size: contain;
 	}
 </style>
