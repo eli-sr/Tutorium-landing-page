@@ -1,0 +1,58 @@
+---
+
+---
+
+<footer class='bg-gray-100 py-8 mt-12'>
+    <div class='px-4 md:px-20 max-w-[80vw] mx-auto'>
+        <div class='grid gap-8 md:grid-cols-2 lg:grid-cols-4'>
+            <div>
+                <h3 class='text-lg font-semibold mb-4 text-gray-800'>TutorApp</h3>
+                <p class='text-sm text-gray-600'>Conectando estudiantes con los mejores tutores desde 2023.</p>
+            </div>
+            <div>
+                <h3 class='text-lg font-semibold mb-4 text-gray-800'>Enlaces rápidos</h3>
+                <ul class='space-y-2'>
+                    {
+                        ['Inicio', 'Características', 'Cómo funciona', 'Descargar'].map((link) => (
+                            <li>
+                                <a href='#' class='text-sm text-gray-600 hover:text-red-600 transition-colors'>
+                                    {link}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            <div>
+                <h3 class='text-lg font-semibold mb-4 text-gray-800'>Legal</h3>
+                <ul class='space-y-2'>
+                    {
+                        ['Términos de servicio', 'Política de privacidad', 'Cookies'].map((link) => (
+                            <li>
+                                <a href='#' class='text-sm text-gray-600 hover:text-red-600 transition-colors'>
+                                    {link}
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </div>
+            <div>
+                <h3 class='text-lg font-semibold mb-4 text-gray-800'>Síguenos</h3>
+                <div class='flex space-x-4'>...</div>
+            </div>
+        </div>
+        <div class='mt-8 border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center'>
+            <p class='text-xs text-gray-500'>© 2023 TutorApp. Todos los derechos reservados.</p>
+            <div class='mt-4 sm:mt-0'>
+                <!-- <Image
+                src="/placeholder.svg?height=30&width=120"
+                alt="Payment methods"
+                width={120}
+                height={30}
+                class="h-8"
+              /> -->
+            </div>
+        </div>
+    </div>
+</footer>
