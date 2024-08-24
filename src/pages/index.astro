@@ -115,6 +115,36 @@ import { Image } from 'astro:assets'
 				</div>
 			</div>
 		</section>
+		<section id="descargar" class="py-12 md:py-24 lg:py-32 bg-red-600 text-white relative overflow-hidden w-screen">
+          <div class="absolute inset-0 bg-gradient-to-br from-red-500 to-red-700"></div>
+          <div class="px-4 md:px-6 relative z-10">
+            <div
+              class="flex flex-col items-center space-y-4 text-center"
+            >
+              <div class="space-y-2">
+                <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tighter">
+                  Descarga la app y comienza hoy
+                </h2>
+                <p class="mx-auto max-w-[600px] text-xl md:text-2xl text-red-100">
+                  Disponible para iOS y Android. Descárgala gratis y empieza a aprender con los mejores tutores.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <button class="bg-white text-red-600 hover:bg-red-100 transition-colors text-lg py-2 px-4 rounded-xl">
+                  Descargar para iOS
+                </button>
+                <button class="bg-white text-red-600 hover:bg-red-100 transition-colors text-lg py-2 px-4 rounded-xl">
+                  Descargar para Android
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+          >
+            <!-- <ChevronDown class="w-12 h-12 text-white opacity-50" /> -->
+          </div>
+        </section>
 	</main>
 </Layout>
 <style>
